@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Press Me</string>
+    <string name="Android">Android</string>
+    <string name="is">is</string>
+    <string name="cool">cool</string>
+    <string name="and">and</string>
+    <string name="awesome">awesome!</string>
+    <string name="press">Press!</string>
+</resources>
