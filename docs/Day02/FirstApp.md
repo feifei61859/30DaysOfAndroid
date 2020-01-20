@@ -59,6 +59,7 @@ Press Me的用户界面需要下面的组件:
 </LinearLayout>
 ```  
 (上述代码不理解没有关系，在后面会进行详细的讲解)  
+android:id属性指的是这个组件(View)的id,它们都是Int类型的,存放在R.java的id类中。(android:id属性值前面有一个+标志，意思是创建一个ID)  
 你发现TextView中的android:text属性报错了，原因是text属性中的内容没有在string.xml(字符串资源文件)声明。你可以直接将它改为android:text = "Android",但Android项目开发中不是很提倡这种做法。(如果有一天你的App火遍全球，要支持多种语言,你可以将多国语言文字内容放在string.xml中，就可以很方便地引用它们)    
 我们找到app/res/values/string.xml，发现有一段默认的代码:  
 ```xml
@@ -80,3 +81,182 @@ Press Me的用户界面需要下面的组件:
 ```
 点击预览(preview),就可以看到Press Me的初始界面了!  
 
+## 接下来？喝咖啡(Java)
+我们似乎构建了一个很简单而优美的用户界面，但单单只有界面是不够的，我们的App需要与用户们一起互动，那什么负责管理用户与应用界面的交互呢?  
+![image]()  
+答案是Activity!  
+我们找到我们的MainActivity.java文件,打开后默认的代码应该是这个样子:
+```java
+package com.caesar.pressme;
+
+import androidx.appcompat.app.AppCompatActivity;
+import android.os.Bundle;
+
+public class MainActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+    } 
+}
+```  
+我们根据代码来分析，MainActivity类继承自AppCompatActivity类，并且重写了父类的onCreate方法。onCreate(Bundle)是Activity生命周期中的一个状态，意思是当这个Activity在创建的时候要执行的代码。  
+我们继续往下看，这个Activity创建的时候执行了setContentView(R.layout.activity_main)方法，它的主要意思是获取该Activity的用户界面。该方法的原型是: 
+```java
+public void setContentView(int layoutResID)
+```
+为什么它的参数layoutResID是Int类型的?我们之前稍微提到过，资源ID都是以int类型的方式存放在R.java中。(具体你可以打开目录app/build/generated/source/r/debug找到R.java)  
+既然我们获取了该Activity的用户界面，又得到了资源ID.我们就可以在MainActivity中引用组件(View)。代码可以这么写:  
+```java
+package com.caesar.pressme;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
+
+public class MainActivity extends AppCompatActivity {
+
+    private Button mButton;     //声明Button组件
+    private TextView mTextView;  //声明TextView组件
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);   //获得Activity对应的用户界面
+        
+        //通过资源ID找到组件
+        mButton = (Button) findViewById(R.id.PressMeBtn);
+        mTextView = (TextView) findViewById(R.id.myText);
+    }
+}
+```  
+(在AndroidStudio中，如果遇到错误，你可以用Alt+Enter自动帮你导入包。)  
+下面我们为按钮设置一个监听事件:
+```java
+package com.caesar.pressme;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
+import android.widget.Toast;
+
+public class MainActivity extends AppCompatActivity {
+
+    private Button mButton;
+    private TextView mTextView;
+    
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        mButton = (Button) findViewById(R.id.PressMeBtn);
+        mTextView = (TextView) findViewById(R.id.myText);
+        
+        //设置监听事件
+        mButton.setOnClickListener(new View.OnClickListener() {
+            //当按钮被按下的时候要执行的代码
+            @Override
+            public void onClick(View v) {
+                //弹出一个Toast
+                Toast.makeText(MainActivity.this,
+                        R.string.press,            
+                        Toast.LENGTH_SHORT).show();   //想要显示就不要忘记调用show方法
+            }
+        });
+    }
+
+}
+```  
+Toast是一个提醒消息，使用makeText方法.show()可以弹出一个消息提醒.  
+```java
+public static Toast makeText(Context context,int resId,int duration)
+```
+## 编写逻辑
+我们的需求是:每按下按钮，上面的字符串(TextView)都会被改变。这个只需要用一个setText()就可以实现.  
+我们新建一个类，名为Character.java.  
+Character.java  
+```java
+package com.caesar.pressme;
+
+public class Character {
+    private int mTextResId;
+
+    public Character(int TextResId){
+        mTextResId = TextResId;
+    }
+
+    public int getTextResId() {
+        return mTextResId;
+    }
+    public void setTextResId(int textResId) {
+        mTextResId = textResId;
+    }
+}
+```  
+MainActivity.java  
+```java
+package com.caesar.pressme;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
+import android.widget.Toast;
+
+public class MainActivity extends AppCompatActivity {
+
+    private Button mButton;
+    private TextView mTextView;
+
+    private int Index = 0;   //索引，数组的索引都是从0开始的
+
+    //用一个数组来存放字符串内容
+    private Character[] mCharacters = new Character[]{
+        new Character(R.string.Android),
+            new Character(R.string.is),
+            new Character(R.string.cool),
+            new Character(R.string.and),
+            new Character(R.string.awesome),
+    };
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        mButton = (Button) findViewById(R.id.PressMeBtn);
+        mTextView = (TextView) findViewById(R.id.myText);
+
+        mButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(MainActivity.this,
+                        R.string.press,
+                        Toast.LENGTH_SHORT).show();
+                Index = Index + 1;   //显示下一个字符串
+                if(Index > 4){
+                    Index = 0;
+                }
+                update();
+            }
+        });
+    }
+
+    private void update(){
+        //获得当前字符串的内容
+        int character = mCharacters[Index].getTextResId();
+        //重新设置TextView，实现了更新的效果
+        mTextView.setText(character);
+    }
+}
+```
