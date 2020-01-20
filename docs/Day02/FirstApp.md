@@ -11,7 +11,16 @@
 ![image](https://github.com/stepfencurryxiao/30DaysOfAndroid/blob/master/docs/Day02/image/NewProject.png)  
 Finish后，AndroidStudio会帮我们自动构建项目(等待...)
 
-### 设计用户界面
+# 设计用户界面
+
+## 分析Press Me中的布局(Layout)
+Press Me的用户界面需要下面的组件:  
+* 一个垂直的LinearLayout组件(线性布局)  
+* 一个要显示字符串的TextView组件(文本框)  
+* 一个Button组件(按钮)    
+![image](https://github.com/stepfencurryxiao/30DaysOfAndroid/blob/master/docs/Day02/image/Layout.jpg)    
+下面我们就在activity_main中定义这些组件.  
+
 我们打开app/res/layout/activity_main.xml文件。  
 ![image](https://github.com/stepfencurryxiao/30DaysOfAndroid/blob/master/docs/Day02/image/001.png)  
 删去默认的代码，输入下面的代码：    
@@ -49,6 +58,7 @@ Finish后，AndroidStudio会帮我们自动构建项目(等待...)
 
 </LinearLayout>
 ```  
+(上述代码不理解没有关系，在后面会进行详细的讲解)  
 你发现TextView中的android:text属性报错了，原因是text属性中的内容没有在string.xml(字符串资源文件)声明。你可以直接将它改为android:text = "Android",但Android项目开发中不是很提倡这种做法。(如果有一天你的App火遍全球，要支持多种语言,你可以将多国语言文字内容放在string.xml中，就可以很方便地引用它们)    
 我们找到app/res/values/string.xml，发现有一段默认的代码:  
 ```xml
@@ -68,3 +78,5 @@ Finish后，AndroidStudio会帮我们自动构建项目(等待...)
     <string name="Android">Android</string>
 </resources>
 ```
+点击预览(preview),就可以看到Press Me的初始界面了!  
+
