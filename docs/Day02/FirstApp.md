@@ -83,7 +83,7 @@ android:id属性指的是这个组件(View)的id,它们都是Int类型的,存放
 
 ## 接下来？喝咖啡(Java)
 我们似乎构建了一个很简单而优美的用户界面，但单单只有界面是不够的，我们的App需要与用户们一起互动，那什么负责管理用户与应用界面的交互呢?  
-![image]()  
+![image](https://github.com/stepfencurryxiao/30DaysOfAndroid/blob/master/docs/Day02/image/think.jpg)  
 答案是Activity!  
 我们找到我们的MainActivity.java文件,打开后默认的代码应该是这个样子:
 ```java
