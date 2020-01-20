@@ -1,6 +1,7 @@
 ## 我与Android的第一次亲密接触
 
 我们的第一个APP叫做Press Me(点击我),里面包括一个内容为"Press Me"的Button(按钮),每当用户点击这个按钮的时候，按钮上面的字符串都会被改变，效果图:
+![image](https://github.com/stepfencurryxiao/30DaysOfAndroid/blob/master/docs/Day02/image/1579491468011.gif)
 
 ### 开始创建你的第一个项目
 打开AndroidStudio，我们看到了欢迎界面，点击新建项目:
