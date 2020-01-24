@@ -1,5 +1,7 @@
 # 30Days-Of-Android
+欢迎来到《30天玩转Android》系列！通过这个系列的教程，每天能抽出15分钟的时间你就可以学习到最新的Android技术，成为一个Android大佬!
 
+# 目录
 ### Day01:工欲善其事，必先利其器
 * [AndroidStudio 下载与安装教程](https://blog.csdn.net/shengmer/article/details/78866918)(转载自CSDN)    
 * [AndroidStudio 安装各种错误解决](https://blog.csdn.net/TaiJi1985/article/details/51404720)(转载自CSDN)  
@@ -15,3 +17,9 @@
 * [编写MainActivity.java](https://github.com/stepfencurryxiao/30DaysOfAndroid/blob/master/docs/Day03/Activity.md)
 * [为Toast注入灵魂:Toasty](https://github.com/stepfencurryxiao/30DaysOfAndroid/blob/master/docs/Day03/Toasty.md)
 * [没有总结的总结](https://github.com/stepfencurryxiao/30DaysOfAndroid/blob/master/docs/Day03/summarize.md)
+
+# 教程Demo集合
+* Press Me:第一个Android App  
+![Press Me](https://github.com/stepfencurryxiao/30DaysOfAndroid/blob/master/docs/Day02/image/1579491468011.gif)
+* LoginApp:一个简单的登录界面  
+![LoginApp](https://github.com/stepfencurryxiao/30DaysOfAndroid/blob/master/docs/Day03/image/1579827883851.gif)
