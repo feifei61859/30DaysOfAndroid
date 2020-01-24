@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">LoginApp</string>
+    <string name="Login">登录成功!</string>
+    <string name="LoginFail">登录失败!</string>
+    <string name="User">User</string>
+    <string name="Password">Password</string>
+    <string name="LoginBtn">Login</string>
+</resources>
