@@ -8,3 +8,5 @@
 * [Activity与Layout是神马](https://github.com/stepfencurryxiao/30DaysOfAndroid/blob/master/docs/Day02/ActivityAndLayout.md)   
 * [我与Android的第一次亲密接触](https://github.com/stepfencurryxiao/30DaysOfAndroid/blob/master/docs/Day02/FirstApp.md)  
 * [常用的TextView属性](https://github.com/stepfencurryxiao/30DaysOfAndroid/blob/master/docs/Day02/TextView.md)  
+* [做一个简单的总结](https://github.com/stepfencurryxiao/30DaysOfAndroid/blob/master/docs/Day02/summarize.md)
+### Day03:鬼畜的Toast
