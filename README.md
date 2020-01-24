@@ -12,3 +12,5 @@
 ### Day03:鬼畜的Toast
 * [今天打算怎么玩？](https://github.com/stepfencurryxiao/30DaysOfAndroid/blob/master/docs/Day03/LoginApp.md)
 * [分析我们的登录界面](https://github.com/stepfencurryxiao/30DaysOfAndroid/blob/master/docs/Day03/Layout.md)
+* [编写MainActivity.java](https://github.com/stepfencurryxiao/30DaysOfAndroid/blob/master/docs/Day03/Activity.md)
+* [为Toast注入灵魂:Toasty](https://github.com/stepfencurryxiao/30DaysOfAndroid/blob/master/docs/Day03/Toasty.md)
