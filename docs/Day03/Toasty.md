@@ -57,6 +57,6 @@ Toasty.normal(yourContext, "Normal toast w/ icon", yourIconDrawable).show();
 Toasty.custom(yourContext, "I'm a custom Toast", yourIconDrawable, tintColor, duration, withIcon, 
 shouldTint).show();
 ```  
-![Toasty](https://github.com/stepfencurryxiao/30DaysOfAndroid/edit/master/docs/Day03/image/Toasty.png)
+![Toasty](https://github.com/stepfencurryxiao/30DaysOfAndroid/blob/master/docs/Day03/image/Toasty.png)
 ### 一个小问题
 连续点击登录按钮然后退出，仔细观察Toast,你发现了什么?
