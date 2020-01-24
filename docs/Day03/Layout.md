@@ -47,7 +47,8 @@
 </LinearLayout>
 ```
 
-点击预览就可以看到我们的登录界面了:
+点击预览就可以看到我们的登录界面了:  
+![preview](https://github.com/stepfencurryxiao/30DaysOfAndroid/blob/master/docs/Day03/image/preview.png)
 
 ### 分析activity_main.xml
 * 我们来逐行分析xml文件的内容,第一行代码是声明了xml的版本和xml的编码形式,采用的是utf-8.我们不难发现这个界面是一个LinearLayout(线性布局)，
@@ -56,7 +57,7 @@
 * LinearLayout中还有一个android:orientation="vertical"属性，它决定了在LinearLayout上的组件是水平放置还是垂直放置,我们这里使用了垂直放置(vertical).
 * android:hint="@string/Password"是EditText的暗示语(默认提醒输入)，它的属性值引用了我们的字符串资源.  
 * android:inputType="textPassword"由单词意思可以知道，它是EditText的输入类型,这里我们定义为textPassword(密文),当然，它的类型有很多，下面是我在csdn
-上找到的输入类型:
+上面找到的输入类型:
 ```Java
     android:inputType="none"//输入普通字符
     android:inputType="text"//输入普通字符
