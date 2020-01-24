@@ -39,7 +39,6 @@ dependencies {
         });
     }
 ```
-我们
 ### 总结方法
 ```java
 //显示错误Toast
@@ -57,5 +56,7 @@ Toasty.normal(yourContext, "Normal toast w/ icon", yourIconDrawable).show();
 //自定义Toast
 Toasty.custom(yourContext, "I'm a custom Toast", yourIconDrawable, tintColor, duration, withIcon, 
 shouldTint).show();
-```
+```  
+![Toasty]()
 ### 一个小问题
+连续点击登录按钮然后退出，仔细观察Toast,你发现了什么?
