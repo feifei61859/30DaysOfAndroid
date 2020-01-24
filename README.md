@@ -9,8 +9,9 @@
 * [我与Android的第一次亲密接触](https://github.com/stepfencurryxiao/30DaysOfAndroid/blob/master/docs/Day02/FirstApp.md)  
 * [常用的TextView属性](https://github.com/stepfencurryxiao/30DaysOfAndroid/blob/master/docs/Day02/TextView.md)  
 * [做一个简单的总结](https://github.com/stepfencurryxiao/30DaysOfAndroid/blob/master/docs/Day02/summarize.md)
-### Day03:鬼畜的Toast
+### Day03:为Toast注入灵魂
 * [今天打算怎么玩？](https://github.com/stepfencurryxiao/30DaysOfAndroid/blob/master/docs/Day03/LoginApp.md)
 * [分析我们的登录界面](https://github.com/stepfencurryxiao/30DaysOfAndroid/blob/master/docs/Day03/Layout.md)
 * [编写MainActivity.java](https://github.com/stepfencurryxiao/30DaysOfAndroid/blob/master/docs/Day03/Activity.md)
 * [为Toast注入灵魂:Toasty](https://github.com/stepfencurryxiao/30DaysOfAndroid/blob/master/docs/Day03/Toasty.md)
+* [没有总结的总结](https://github.com/stepfencurryxiao/30DaysOfAndroid/blob/master/docs/Day03/summarize.md)
