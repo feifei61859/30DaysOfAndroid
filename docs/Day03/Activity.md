@@ -49,4 +49,5 @@ public class MainActivity extends AppCompatActivity {
     }
 }
 ```  
+以上代码应该很好理解，主要是为登录Button设置了一个监听事件判断用户是否输入用户名和密码.  
 点击运行，我们的App就开发完成了!
