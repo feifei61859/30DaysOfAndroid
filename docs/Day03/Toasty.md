@@ -21,7 +21,7 @@ dependencies {
 ```
 
 ### 使用Toasty--为App注入灵魂
-我们只需修改两行代码:
+我们只需修改两行代码,方法的参数与Toast相同:  
 ```java
 //为按钮设置监听事件
         LoginBtn.setOnClickListener(new View.OnClickListener() {
