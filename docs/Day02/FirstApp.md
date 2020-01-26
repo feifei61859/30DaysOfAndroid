@@ -1,5 +1,5 @@
 ## 我与Android的第一次亲密接触
-
+今天，我们来编写第一个App.
 我们的第一个APP叫做Press Me(点击我),里面包括一个内容为"Press Me"的Button(按钮),每当用户点击这个按钮的时候，按钮上面的字符串都会被改变，效果图:  
 ![image](https://github.com/stepfencurryxiao/30DaysOfAndroid/blob/master/docs/Day02/image/1579491468011.gif)
 
@@ -181,7 +181,7 @@ public static Toast makeText(Context context,int resId,int duration)
 ```
 ## 编写逻辑
 我们的需求是:每按下按钮，上面的字符串(TextView)都会被改变。这个只需要用一个setText()就可以实现.  
-我们新建一个类，名为Character.java.  
+我们新建一个类，名为Character.java。
 Character.java  
 ```java
 package com.caesar.pressme;
@@ -201,6 +201,7 @@ public class Character {
     }
 }
 ```  
+上述代码中包含了MVC设计模式的运用，至于什么是MVC设计模式，我们会在后面深入探究，读者现在暂时不用理解，只需跟着我一步一步地敲代码。  
 MainActivity.java  
 ```java
 package com.caesar.pressme;
@@ -260,3 +261,4 @@ public class MainActivity extends AppCompatActivity {
     }
 }
 ```
+我们的第一个App就编写完毕了.我们可以在模拟器或连接usb在手机上运行，查看运行效果。
