@@ -16,7 +16,18 @@
 * [分析我们的登录界面](https://github.com/stepfencurryxiao/30DaysOfAndroid/blob/master/docs/Day03/Layout.md)
 * [编写MainActivity.java](https://github.com/stepfencurryxiao/30DaysOfAndroid/blob/master/docs/Day03/Activity.md)
 * [为Toast注入灵魂:Toasty](https://github.com/stepfencurryxiao/30DaysOfAndroid/blob/master/docs/Day03/Toasty.md)
-* [没有总结的总结](https://github.com/stepfencurryxiao/30DaysOfAndroid/blob/master/docs/Day03/summarize.md)
+* [没有总结的总结](https://github.com/stepfencurryxiao/30DaysOfAndroid/blob/master/docs/Day03/summarize.md)  
+### Day04:万物皆有生命
+* [Activity的生命周期]()
+* [Android中的System.out.println()]()
+* [Layout是怎么画在Activity上的]()
+* [小结]()
+### Day05:
+
+### Day06:
+
+### Day07:
+
 
 # 教程Demo集合
 * Press Me:第一个Android App  
