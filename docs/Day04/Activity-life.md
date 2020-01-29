@@ -19,7 +19,7 @@ onDestroy(Bundle)方法),何为销毁一个Activity？就是Activity在内存中
 ，恢复Activity原来的状态。  
 我们将Activity所有状态的变化就称为Activity的生命周期。  
 下面一图也是从Android文档上弄下来的，展示了Activity的各个生命周期:  
-![Activity-life](https://github.com/stepfencurryxiao/30DaysOfAndroid/tree/master/docs/Day04/image/Activity-life.png)  
+![Activity-life](https://github.com/stepfencurryxiao/30DaysOfAndroid/blob/master/docs/Day04/image/Activity-life.png)  
 我们来分析Activity的每一种状态吧，首先从我们平时接触最多的onCreate(Bundle)状态开始:
 这是在LoginApp的MainActivity.java中onCreate方法的代码:  
 我们在onCreate(Bundle)中都做了些什么?
