@@ -23,7 +23,7 @@ D/dalvikvm( 130): GC freed 834 objects / 81760 bytes in 63ms
 D/dalvikvm( 52): GC freed 10588 objects / 425776 bytes in 94ms
 ```
 为了方便查找，我们点击LogCat右上角的Show only selected application。我们要创建过滤设置，选择Edit Filter Configuration选项。点击绿色+按钮，在Filter Name中输入MainActivity,Log Tag也输入MainActivity.  
-![Activity-life](https://github.com/stepfencurryxiao/30DaysOfAndroid/tree/master/docs/Day04/image/LogCat.png)  
+![Log](https://github.com/stepfencurryxiao/30DaysOfAndroid/blob/master/docs/Day04/image/LogCat.png)  
 再次点击运行，看到输出结果:  
 ```java
 D/MainActivity: onCreate
