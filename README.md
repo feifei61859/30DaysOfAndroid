@@ -18,8 +18,8 @@
 * [为Toast注入灵魂:Toasty](https://github.com/stepfencurryxiao/30DaysOfAndroid/blob/master/docs/Day03/Toasty.md)
 * [没有总结的总结](https://github.com/stepfencurryxiao/30DaysOfAndroid/blob/master/docs/Day03/summarize.md)  
 ### Day04:万物皆有生命
-* Activity的生命周期
-* Android中的System.out.println()
+* [Activity的生命周期](https://github.com/stepfencurryxiao/30DaysOfAndroid/blob/master/docs/Day04/Activity-life.md)
+* [Android中的System.out.println()](https://github.com/stepfencurryxiao/30DaysOfAndroid/blob/master/docs/Day04/LogCat.md)
 * Layout是怎么画在Activity上的
 * 小结
 ### Day05:Activity之间的跳转与数据传递
