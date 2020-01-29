@@ -18,15 +18,28 @@
 * [为Toast注入灵魂:Toasty](https://github.com/stepfencurryxiao/30DaysOfAndroid/blob/master/docs/Day03/Toasty.md)
 * [没有总结的总结](https://github.com/stepfencurryxiao/30DaysOfAndroid/blob/master/docs/Day03/summarize.md)  
 ### Day04:万物皆有生命
-* [Activity的生命周期]()
-* [Android中的System.out.println()]()
-* [Layout是怎么画在Activity上的]()
-* [小结]()
-### Day05:
+* Activity的生命周期
+* Android中的System.out.println()
+* Layout是怎么画在Activity上的
+* 小结
+### Day05:Activity之间的跳转与数据传递
+* 没有引言的引言
+* intent是神马
+* 将数据传到下一个界面
+* 小结一下
+### Day06:探究Fragment
+* Fragment是神马
+* 谈谈使用Fragment的好处
+* 怎么在Activity中使用Fragment?
+* Fragment也有生命周期
+* 总结
+### Day07:界面就应该整整齐齐
+* 使用RecyclerView
+* Adapter——适配器
+* 实现ViewHolder
+* ListView与GridView
+* 总结
 
-### Day06:
-
-### Day07:
 
 
 # 教程Demo集合
