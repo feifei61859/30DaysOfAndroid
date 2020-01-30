@@ -1,6 +1,7 @@
 ## 使用Toasty
 ### 什么是Toasty?
-Toasty可以说是Toast的加强版，它是由一位Github大神[GrenderG](https://github.com/GrenderG)开发的一个组件，目前已有5.6k的star.项目地址:https://github.com/GrenderG/Toasty
+Toasty可以说是Toast的加强版，它是由一位Github大神[GrenderG](https://github.com/GrenderG)开发的一个组件，目前已有5.6k的star.项目地址:https://github.com/GrenderG/Toasty  
+![ToastAndToasty](https://github.com/stepfencurryxiao/30DaysOfAndroid/blob/master/docs/Day03/image/ToastAndToasty.png)
 
 ### 注入Toasty
 由于Android自身没有Toasty,所以我们要导入这个组件.我们在App目录下发现有2个bulid.gradle文件，我们找到Project中的build.gradle文件（不是我们的Module的build.gradle文件），添加一行代码:
