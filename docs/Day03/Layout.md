@@ -11,6 +11,8 @@
     <string name="LoginBtn">Login</string>
 </resources>
 ```
+我们的登录界面的布局应该是这样的:  
+![layout](https://github.com/stepfencurryxiao/30DaysOfAndroid/blob/master/docs/Day03/image/Layout.png)  
 找到app/src/main/res/layout/activity_main.xml,删掉默认的代码,敲进以下的代码:
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -47,10 +49,7 @@
 </LinearLayout>
 ```
 
-点击预览就可以看到我们的登录界面了:  
-![preview](https://github.com/stepfencurryxiao/30DaysOfAndroid/blob/master/docs/Day03/image/preview.png)
-
-### 分析activity_main.xml
+### 分析activity_main.xml  
 * 我们来逐行分析xml文件的内容,第一行代码是声明了xml的版本和xml的编码形式,采用的是utf-8.我们不难发现这个界面是一个LinearLayout(线性布局)，
 它的高度和宽度都是match_parent(与父视图的大小相同),至于什么是线性布局，
 我们会在以后详细讲解,现在你只需知道它就是一种布局，里面包含了2个EditText(输入框)和一个Button,并规定了它们的排列顺序.    
@@ -93,3 +92,5 @@
     android:inputType="time"//时间键盘
 
 ```
+点击预览就可以看到我们的登录界面了:  
+![preview](https://github.com/stepfencurryxiao/30DaysOfAndroid/blob/master/docs/Day03/image/preview.png)
