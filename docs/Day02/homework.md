@@ -1,3 +1,5 @@
+![image](https://github.com/stepfencurryxiao/30DaysOfAndroid/blob/master/docs/Day04/image/summarize.png)  
+
 1,简述Activity与Layout的作用。  
 2,改变toast的显示位置，使它在屏幕居中的位置显示. 
 提示:  
