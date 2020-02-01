@@ -1,6 +1,7 @@
 ## Activity的生命周期
-从开始学习那天到现在，我们已经开发了2个App了，不知你有没有发现，我们每一个MainActivity.java文件中都有一个onCreate(bundle)方法，之前我也粗略地提到过它
-是Activity生命周期的一种状态，接下来我们就来详细讲解一下Activity的生命周期。  
+万物都有生命，我们也一样，从出生到死亡，这就是我们的生命周期。Activity也不例外，它的生命周期就是从它被创造到它被销毁的过程。  
+
+从开始学习那天到现在，我们已经开发了2个App了，不知你有没有发现，我们每一个MainActivity.java文件中都有一个onCreate(bundle)方法，之前我也粗略地提到过它是Activity生命周期的一种状态，接下来我们就来详细讲解一下Activity的生命周期。  
 
 这是Google官方对Activity生命周期的解释:  
 在生命周期回调方法中，您可以声明用户离开和再次进入 Activity 时 Activity 的行为方式。例如，如果您正在构建流式视频播放器，
@@ -17,7 +18,7 @@
 onDestroy(Bundle)方法),何为销毁一个Activity？就是Activity在内存中消失了，我们再次打开这个App的时候，这个Activity又重新被创建(执行了onCreate(Bundle)方法)
 而这时有一位朋友来打电话手机显示来电消息的时候，这个Activity可能执行了onPause(Bundle)方法，则Activity处于停止的状态中，通话完毕后，又调用了onResume(Bundle)方法
 ，恢复Activity原来的状态。  
-我们将Activity所有状态的变化就称为Activity的生命周期。  
+Android允许我们可以覆盖Activity每一个生命周期的方法。比如说，onCreate(Bundle)前面都有一个@Override注解，其实我们覆盖了父类的onCreate(bundle)方法。所以说，我们可以在Activity达到各种状态时去写该状态下要执行的代码。至于要写什么样的代码，那就要看你的需求了。不过我们要知道Activity什么时候到达什么状态，才能覆盖Activity生命周期的方法，下面就来了解一下Activity的各种状态:  
 下面一图也是从Android文档上弄下来的，展示了Activity的各个生命周期:  
 ![Activity-life](https://github.com/stepfencurryxiao/30DaysOfAndroid/blob/master/docs/Day04/image/Activity-life.png)  
 我们来分析Activity的每一种状态吧，首先从我们平时接触最多的onCreate(Bundle)状态开始:
@@ -65,4 +66,4 @@ onDestroy(Bundle)方法),何为销毁一个Activity？就是Activity在内存中
 ### onStop(Bundle)
 当Activity不可见时，Activity处于Stopped状态。此时调用了onStop(Bundle)方法。
 ### onDestroy(Bundle)
-在Activity被销毁之前，系统会调用 onDestroy(Bundle)方法。
+在Activity被销毁之前，系统会调用 onDestroy(Bundle)方法。  
