@@ -6,7 +6,8 @@
 最后看一下官方解释吧:  
 * Activity 表示具有用户界面的单一屏幕。例如，电子邮件应用可能具有一个显示新电子邮件列表的 Activity、一个用于撰写电子邮件的 Activity 以及一个用于阅读电子邮件的 Activity。 尽管这些 Activity 通过协作在电子邮件应用中形成了一种紧密结合的用户体验，但每一个 Activity 都独立于其他 Activity 而存在。 因此，其他应用可以启动其中任何一个 Activity（如果电子邮件应用允许）。 例如，相机应用可以启动电子邮件应用内用于撰写新电子邮件的 Activity，以便用户共享图片。 
 * 每创建一个Activity都要在AndroidManifest.xml文件中声明。  
-为什么Activity都要在AndroidManifest.xml文件中声明？这个以后我们会说到，我们新建一个Activity的时候AndroidStudio会自动添加在AndroidManifest.xml文件中。  
+
+为什么Activity都要在AndroidManifest.xml文件中声明？这里先剧透一下，只有声明过了，App在运行时才能找到这个Activity，并执行所写的代码。关于更详细的我们以后会提到，我们新建一个Activity的时候AndroidStudio会自动添加在AndroidManifest.xml文件中。AndroidManifest.xml不仅仅只有这个功能，里面还有更多好玩的东西。  
 
 ## Layout
 Layout这个英文单词的中文意思是"布局"，没错，就是那个"布局"，比如说家具中的布局就是家具的摆放位置。而Android中的布局表示的是组件的位置而已。  
