@@ -4,7 +4,7 @@
 我们先来学习Activity的跳转，我们知道之前写的都是只有一个MainActivity的App,我们今天就来修改一下之前写的LoginApp,让MainActivity跳转到第二个Actvitiy,
 我们点击登录按钮，它跳转到了第二个Activity,并弹出了一个"欢迎回来<用户名>"的Toasty.  
 效果图:  
-![APP](https://github.com/stepfencurryxiao/30DaysOfAndroid/blob/master/docs/Day04/image/App.gif)  
+![APP](https://github.com/stepfencurryxiao/30DaysOfAndroid/blob/master/docs/Day05/image/App.gif)  
 ## Intent是神马
 日常操作，先看一下官方解释:  
 Intent 分为两种类型：  
@@ -22,7 +22,7 @@ Intent 分为两种类型：
 ## Coding时间
 下面就来跟我一行一行地敲代码，慢慢来理解这个过程。  
 我们打开LoginApp,在App目录下新建一个Activity，名字为SecondActivity:  
-![NewClass](https://github.com/stepfencurryxiao/30DaysOfAndroid/blob/master/docs/Day04/image/NewClass.png)   
+![NewClass](https://github.com/stepfencurryxiao/30DaysOfAndroid/blob/master/docs/Day05/image/NewClass.png)   
 我们要从将递员(MainActivity)的快递(intent)送到你(SecondActivity)的手上,首先要把快递(intent)包装好:
 ```java
  Intent intent = new Intent(MainActivity.this,SecondActivity.class);
@@ -92,7 +92,7 @@ public class MainActivity extends AppCompatActivity {
 
 ```  
 运行一下，输入后点击登录，由于我们没有定义SecondActivity的用户界面，所以我们的SecondActivity界面是一片空白:  
-![AppTwo](https://github.com/stepfencurryxiao/30DaysOfAndroid/blob/master/docs/Day04/image/AppTwo.png)  
+![AppTwo](https://github.com/stepfencurryxiao/30DaysOfAndroid/blob/master/docs/Day05/image/AppTwo.png)  
 在SecondActivity上面画点什么吧!一个什么都没有的Activity似乎不是很好。我们就在上面画一个按钮，点击它会调用finish()方法:  
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -160,7 +160,7 @@ public class SecondActivity extends AppCompatActivity {
 
 ```  
 点击运行，结果是这样的:  
-![ActivityFinish](https://github.com/stepfencurryxiao/30DaysOfAndroid/blob/master/docs/Day04/image/ActivityFinish.gif)   
+![ActivityFinish](https://github.com/stepfencurryxiao/30DaysOfAndroid/blob/master/docs/Day05/image/ActivityFinish.gif)   
 我们看到SecondActivity返回了登录Activity,所以说Activity调用finish()方法可以把我们的Activity结束掉，返回上一个Activity.当然你也可以用intent的方法来返回上
 登录Activity，运行效果都是一样的:  
 ```java
