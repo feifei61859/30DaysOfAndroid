@@ -173,7 +173,7 @@ startActivity(intent);
 跳转的Activity。所以说intent的地位还是挺重要的。  
 不过ActivityManager还有其它功能，比如判断应用是否在前台运行，应用是否在运行等等。  
 下面一图展现了从MainActivity到SecondActivity的过程:  
-![AndroidSystem](https://github.com/stepfencurryxiao/30DaysOfAndroid/blob/master/docs/Day04/image/AndroidSystem.png)    
+![AndroidSystem](https://github.com/stepfencurryxiao/30DaysOfAndroid/blob/master/docs/Day05/image/AndroidSystem.png)    
 intent里面包含了一个叫component的东西，它指向了要跳转的Activity,当然这里肯定是指向SecondActivity。intent还有其它组成:Action,Data,Category,Flags,Extras.
 其中Extras就是我们接下来要讲的，它与Activity的数据传递有关。Action顾名思义是指Intent要完成的动作，Data是执行Action的数据，
 Category通过一个字符串来表示启动窗口时符合的类别，比如说我们可以用CATEGORY_APP_CONTACTS来启动联系人应用程序。哎呀！不小心讲到隐式intent了!又剧透了，哈哈。    
