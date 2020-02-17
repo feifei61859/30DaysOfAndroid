@@ -3,7 +3,7 @@
 
 # Week1 - Week2:Android基础部分
 ## Week1
-* Day01:初识Android，请多多关照
+* [Day01:初识Android，请多多关照](https://github.com/stepfencurryxiao/30DaysOfAndroid/blob/master/docs/Day01/初学Android.md)
 * [Day02:愉快的开始](https://github.com/stepfencurryxiao/30DaysOfAndroid/blob/master/docs/Day02/%E7%AC%AC%E4%B8%80%E6%AC%A1%E4%B8%8EAndroid%E4%BA%B2%E5%AF%86%E6%8E%A5%E8%A7%A6.md)
 * [Day03:为Toast注入灵魂](https://github.com/stepfencurryxiao/30DaysOfAndroid/blob/master/docs/Day03/%E4%B8%BAToast%E6%B3%A8%E5%85%A5%E7%81%B5%E9%AD%82.md)
 * [Day04:万物皆有生命之Activity生命周期](https://github.com/stepfencurryxiao/30DaysOfAndroid/blob/master/docs/Day04/Activity%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F.md)
@@ -35,9 +35,6 @@
 * Day26:Android网络原理(二)
 * Day27:NDK系列(一)：C/C++基础
 * Day28:NDK系列(二): 提高程序的效率
-## 额外篇
-* Day29:tersorflow for android
-* Day30:几种AI模型与总结
 
 
 # 教程Demo集合
