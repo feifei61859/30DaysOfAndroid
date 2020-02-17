@@ -62,8 +62,8 @@ First,我们要安装就要找到下载地址吧！AndroidStudio安装地址:htt
 ![011](https://github.com/stepfencurryxiao/30DaysOfAndroid/blob/master/docs/Day01/image/011.png)  
 ![012](https://github.com/stepfencurryxiao/30DaysOfAndroid/blob/master/docs/Day01/image/012.png)  
 ![013](https://github.com/stepfencurryxiao/30DaysOfAndroid/blob/master/docs/Day01/image/013.png)  
-![014](https://github.com/stepfencurryxiao/30DaysOfAndroid/blob/master/docs/Day01/image/014.png)  
-![015](https://github.com/stepfencurryxiao/30DaysOfAndroid/blob/master/docs/Day01/image/015.png)  
+![014](https://github.com/stepfencurryxiao/30DaysOfAndroid/blob/master/docs/Day01/image/015.png)  
+![015](https://github.com/stepfencurryxiao/30DaysOfAndroid/blob/master/docs/Day01/image/016.png)  
 耐心等待5分钟，安装完毕！  
 
 ## 总结
